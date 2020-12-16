@@ -1,6 +1,7 @@
 header{
     width: 100%;
-    min-height: 40vh;
+    height: auto;
+    overflow: hidden;
 }
 
 .header-container{
@@ -88,6 +89,7 @@ header{
                 color: #e91e63;
                 text-transform: uppercase;
                 letter-spacing: 5px;
+                font-weight: bold;
             }
         }
 
@@ -105,7 +107,7 @@ header{
             width: 15%;
             padding: 5px;
         }
-        h2{
+        h3{
             text-align: center;
             position: relative; 
             display: hidden;

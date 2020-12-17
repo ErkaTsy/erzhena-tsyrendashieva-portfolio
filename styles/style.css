@@ -293,6 +293,7 @@ h1 {
 
 h2 {
   font-size: 28px;
+  letter-spacing: 1px;
 }
 
 h3 {
@@ -669,7 +670,7 @@ header {
     height: 7px;
     background: #e9d856;
     border: 0px solid #222;
-    bottom: 8px;
+    bottom: 26px;
   }
 }
 
@@ -704,7 +705,7 @@ header {
     height: 7px;
     background: #e9d856;
     border: 0px solid #222;
-    bottom: 8px;
+    bottom: 26px;
   }
 }
 
@@ -775,24 +776,21 @@ header {
           justify-content: space-evenly;
 }
 
-.about-me .btn button {
+.about-me .btn a {
   width: 150px;
   padding: 10px 0;
   border: 4px solid #e91e63;
   background: #1E1F26;
   border-radius: 50px;
   font-size: 12px;
+  text-align: center;
   color: #ffffff;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
-.about-me .btn button a {
-  font-size: 12px;
-}
-
-.about-me .btn button:hover,
-.about-me .btn button:focus {
+.about-me .btn a:hover,
+.about-me .btn a:focus {
   border: 4px solid #9B8E35;
 }
 
@@ -816,7 +814,13 @@ header {
   width: 350px;
   height: 350px;
   background-color: #9B8E35;
+  border: 8px solid #9B8E35;
   margin: -40px -20px 20px 20px;
+}
+
+.portfolio-img img {
+  width: 100%;
+  height: auto;
 }
 
 .experience-container {
@@ -940,7 +944,7 @@ header {
   margin: -100px auto 40px;
 }
 
-.experience-container .btn button {
+.experience-container .btn a {
   border: 4px solid #e91e63;
   border-radius: 50px;
   background: #1E1F26;
@@ -948,8 +952,8 @@ header {
   color: #ffffff;
 }
 
-.experience-container .btn button:hover,
-.experience-container .btn button:focus {
+.experience-container .btn a:hover,
+.experience-container .btn a:focus {
   border: 4px solid #9B8E35;
 }
 
@@ -1209,36 +1213,97 @@ header {
 .email-box form input {
   width: 50%;
   height: 30px;
-  border-radius: 30px;
+  border-radius: 3px;
   border: none;
   margin: 15px 0;
   padding-left: 15px;
   background: #2A2C47;
-  color: #ffffff;
 }
 
 .email-box form textarea {
-  border-radius: 20px;
+  border-radius: 2px;
   border: none;
   margin: 15px 0;
   padding: 15px;
   background: #2A2C47;
-  color: #ffffff;
-  resize: none;
+  resize: vertical;
+  width: 100%;
+  height: 150px;
+}
+
+.email-box form input:hover,
+.email-box form input:focus,
+.email-box form textarea:hover,
+.email-box form textarea:focus {
+  border: none;
+  background: #ffffff;
+  color: #000000;
 }
 
 .email-box form button {
   width: 50%;
   background: #2A2C47;
-  border-radius: 30px;
-  border: 4px solid #e91e63;
+  border-radius: 2px;
+  border: 3px solid #e91e63;
   padding: 5px 0;
   color: #ffffff;
 }
 
 .email-box form button:hover,
 .email-box form button:focus {
-  border: 4px solid #3889B8;
+  border: 3px solid #3889B8;
+}
+
+.email-box #status {
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 50px;
+  font-size: 18px;
+}
+
+.email-box #status.success {
+  background: #e91e63;
+  -webkit-animation: status 5s ease forwards;
+          animation: status 5s ease forwards;
+}
+
+.email-box #status.error {
+  background: #ffb510;
+  color: #000000;
+  -webkit-animation: status 5s ease forwards;
+          animation: status 5s ease forwards;
+}
+
+@-webkit-keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 .fa-code,

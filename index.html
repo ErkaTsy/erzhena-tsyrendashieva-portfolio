@@ -69,14 +69,16 @@
                 <h2>About me</h2>
                 <p>I am a Front-End Developer with over two years experience of enterprise level application development wiht good business knowledge and undersatnding of business process.</p>
                 <div class="btn">
-                <button><a href="./assets/CVErzhenaTsy.pdf" download>Download CV</a></button>
-                <button><a href="#contact-info">Hire me</a></button>
+                    <a href="./assets/CVErzhenaTsy.pdf" target="_blank">Download CV</a>
+                    <a href="#contact-info">Hire me</a></button>
                 </div>
 
             </div>
             <div class="img-box">
                 <div class="frame">
-                    <div class="portfolio-img"></div>
+                    <div class="portfolio-img">
+                        <img src="./assets/Erkatsy.png" alt="E.T">
+                    </div>
                 </div>
             </div>
         </section>
@@ -124,7 +126,7 @@
                 </div>                
             </div>
             <div class="btn">
-                <button><a href="./assets/CVErzhenaTsy.pdf" download>Download Resume</a></button>                
+                <a href="./assets/CVErzhenaTsy.pdf" target="_blank">Download Resume</a>               
             </div>
 
         </section>
@@ -283,14 +285,15 @@
                     </ul>
                 </div>
                 <div class="email-box">
-                    <form action="">
-                        <label class="srOnly"></label>
-                        <input type="text" placeholder="Your Name" required>
-                        <label class="srOnly"></label>
-                        <input type="email" placeholder="Your Email" name="" id="" required>
-                        <textarea name="" placeholder="Message" id="" cols="30" rows="10"></textarea>
-                        <button><i class="fas fa-paper-plane"></i>Send a message</button>
+                    <form action="https://formspree.io/f/moqpkool" method="POST" id="my-form">
+                        <label for="user-name" class="sr-only"></label>
+                        <input type="text" id="user-name" placeholder="Your Name &#42;" name="user-name" required>
+                        <label for="user-email" class="sr-only"></label>
+                        <input type="email" id="user-email" placeholder="Your Email &#42;" name="user-email" required>
+                        <textarea name="user-message" placeholder="Message" id="user-message" ></textarea>
+                        <button type="submit"><i class="fas fa-paper-plane"></i>Send a message</button>
                     </form>
+                    <div id="status"></div>
                 </div>
             </div>
 
@@ -300,9 +303,11 @@
     <footer>
         <section class="wrapper footer-container">
             <p>Copyright &copy; 2020 by Erzhena <span>Tsyrendashieva</span>. All rights reserved</p>
-
         </section>
     </footer>
+
+
+    <script src="./app.js"></script>
 
 </body>
 </html>

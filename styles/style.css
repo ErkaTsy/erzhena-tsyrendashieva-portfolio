@@ -457,13 +457,13 @@ header {
   margin: 5px;
   border-radius: 50%;
   width: 15%;
-  padding: 5px;
+  padding: 2px;
 }
 
 .header-container .nav-menu h3 {
   text-align: center;
-  position: relative;
   display: hidden;
+  padding-left: 8px;
 }
 
 .header-container .nav-menu li {
@@ -494,9 +494,9 @@ header {
   color: black;
   border: none;
   border-radius: 50px;
-  width: 450px;
+  width: 350px;
   margin: 20px 0;
-  right: -370px;
+  right: -280px;
   position: absolute;
   -webkit-transition: .7s ease;
   transition: .7s ease;
@@ -507,26 +507,26 @@ header {
 .header-container .nav-menu div.button:focus {
   background-color: white;
   right: -50px;
-  width: 450px;
+  width: 300px;
   color: black;
 }
 
 .header-container .nav-menu div.button.btn2:hover,
 .header-container .nav-menu div.button.btn2:focus {
-  width: 400px;
+  width: 300px;
   color: #e91e63;
 }
 
 .header-container .nav-menu div.button.btn3:hover,
 .header-container .nav-menu div.button.btn3:focus {
-  width: 400px;
+  width: 300px;
   color: #ffb510;
 }
 
 .header-container .nav-menu div.button.btn4:hover,
 .header-container .nav-menu div.button.btn4:focus {
-  width: 400px;
-  color: #2A2C47;
+  width: 300px;
+  color: #3889B8;
 }
 
 .header-container .nav-menu .div.button:active {
@@ -851,6 +851,17 @@ header {
   font-size: 14px;
 }
 
+.experience-box .box {
+  width: 70%;
+  height: 200px;
+}
+
+.experience-box span {
+  padding: 5px;
+  font-size: 12px;
+  background: #e91e63;
+}
+
 .experience-box > div {
   width: 50%;
 }
@@ -871,16 +882,11 @@ header {
 
 .education-skill .box {
   text-align: right;
-  width: 70%;
-  height: 200px;
   border-right: 4px dotted #e91e63;
 }
 
 .education-skill span {
-  padding: 5px;
-  margin-right: -5px;
-  font-size: 12px;
-  background: #e91e63;
+  margin-right: -4px;
 }
 
 .experience-skill {
@@ -895,21 +901,250 @@ header {
 }
 
 .experience-skill .box {
-  width: 70%;
-  height: 200px;
-  border-left: 4px dotted #e91e63;
+  border-left: 1px dashed #e91e63;
 }
 
 .experience-skill span {
-  padding: 5px;
-  margin-left: -5px;
-  font-size: 12px;
-  background: #e91e63;
+  margin-left: -2px;
+}
+
+.experience-container .btn {
+  margin: -100px auto 40px;
+}
+
+.experience-container .btn button {
+  border: 4px solid #e91e63;
+  border-radius: 50px;
+  background: #1E1F26;
+  padding: 15px;
+  color: #ffffff;
+}
+
+.experience-container .btn button:hover,
+.experience-container .btn button:focus {
+  border: 4px solid #9B8E35;
+}
+
+.skills-container {
+  width: 100%;
+  background: #2A2C47;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #ffffff;
+}
+
+.skills-container img {
+  width: 30%;
+}
+
+.skills-container img:hover .skill-box p,
+.skills-container img:focus .skill-box p {
+  display: block;
+}
+
+.skill-text {
+  text-align: center;
+}
+
+.skills-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: rgba(30, 31, 38, 0.7);
+  padding: 40px 0;
+}
+
+.skills-boxes > div {
+  width: 15%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills-container .skill-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px;
+}
+
+.skills-container .skill-box p {
+  font-size: 20px;
+}
+
+.projects-container {
+  background: #2A2C47;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #ffffff;
+}
+
+.projects-container h2 {
+  margin: 0;
+  padding: 20px 0;
+  font-size: 250px;
+  letter-spacing: 4px;
+  opacity: 0.2;
+}
+
+.projects-container h3 {
+  background: rgba(42, 44, 71, 0.9);
+  padding: 15px 40px;
+  border-radius: 15px;
+  letter-spacing: 4px;
+  margin: 10px 0;
+}
+
+.projects-container summary {
+  font-size: 18px;
+  padding: 0 20px 20px 20px;
+  line-height: 22px;
+}
+
+.projects-container ul {
+  padding: 0 20px 5px 20px;
+  color: #e91e63;
+  font-size: 20px;
+}
+
+.projects-container ul li {
+  display: inline-block;
+}
+
+.projects-container a {
+  margin: 5px 20px;
+  padding-bottom: 5px;
+}
+
+.projects-container a:hover {
+  border-bottom: 2px solid #e91e63;
+  -webkit-transition: border-bottom 0.4s, color 0.4s;
+  transition: border-bottom 0.4s, color 0.4s;
+}
+
+.project-title {
+  width: 100%;
+  text-align: center;
+}
+
+.project-boxes {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.project-boxes > div {
+  width: 50%;
+  height: 400px;
+  position: relative;
+}
+
+.project-boxes img {
+  width: 80%;
+  border-radius: 10px;
+  border: 5px solid #9B8E35;
+  position: absolute;
+}
+
+.project-box:nth-child(1),
+.project-box:nth-child(5) {
+  text-align: end;
+}
+
+.project-box:nth-child(1) h3,
+.project-box:nth-child(5) h3 {
+  display: inline-block;
+  margin-right: -100px;
+  position: relative;
+  z-index: 4;
+}
+
+.project-box:nth-child(2) img {
+  margin: -130px 0 0 -40px;
+}
+
+.project-box:nth-child(3) img,
+.project-box:nth-child(7) img {
+  margin: -100px 0 0 120px;
+}
+
+.project-box:nth-child(4) h3,
+.project-box:nth-child(8) h3 {
+  margin-left: -80px;
+}
+
+.project-box:nth-child(6) img {
+  margin: -100px 0 0 -40px;
+}
+
+.project-box {
+  padding: 20px;
 }
 
 .contact-container {
   background: purple;
   height: 400px;
+}
+
+.fa-code,
+.fa-info,
+.fa-laptop-code,
+.fa-at {
+  margin: 0 10px;
+  padding: 25px 10px;
+  color: #e91e63;
+  font-size: 25px;
+}
+
+.fa-info {
+  margin: 0 10px 0 20px;
+}
+
+.fa-js-square,
+.fa-html5,
+.fa-css3-alt,
+.fa-sass,
+.fa-react,
+.fa-github-square,
+.fa-database,
+.fa-jira {
+  font-size: 60px;
+  color: #e91e63;
 }
 
 footer {

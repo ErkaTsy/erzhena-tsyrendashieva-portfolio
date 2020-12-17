@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Rajdhani:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c0a35d1901.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/style.css">
     <title>Portfolio</title>
 </head>
@@ -27,33 +28,33 @@
             <div class="nav-menu">
             <nav>
                 <li>
-                    <a href="#">
+                    <a href="#about">
                         <div  class="button btn1">
-                            <img src="./assets/icons8-info-50.png" alt="About me icon">
+                            <i class="fas fa-info"></i>
                             <h3>About me</h3>
                         </div >
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#skills">
                         <div class="button btn2">
-                            <img src="./assets/icons8-developer-64.png" alt="Developer Icon">
+                            <i class="fas fa-code"></i>
                             <h3>Skills</h3>
                         </div>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#projects">
                         <div class="button btn3">
-                            <img src="./assets/icons8-krita-64.png" alt="Pallete Icon">
+                            <i class="fas fa-laptop-code"></i>
                             <h3>Projects</h3>
                         </div>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#contact-info">
                         <div class="button btn4">
-                            <img src="./assets/icons8-email-96.png" alt="Email Icon">
+                            <i class="fas fa-at"></i>
                             <h3>Contact</h3>
                         </div>
                     </a>
@@ -63,7 +64,7 @@
         </div>  
     </header>  
     <main>
-        <section class="wrapper about-container">
+        <section id="about" class="wrapper about-container">
             <div class="about-me">
                 <h2>About me</h2>
                 <p>I am a Front-End Developer with over two years experience of enterprise level application development wiht good business knowledge and undersatnding of business process.</p>
@@ -107,19 +108,161 @@
                     <h2>Experience skill</h2>
                     <div class="box box4">
                         <span>2020</span>
+                        <h4>Personal Projects</h4>
+                        <summary></summary>
                     </div>
                     <div class="box box5">
                         <span>2018-2020</span>
+                        <h4>Freelancer</h4>
+                        <summary></summary>
                     </div>
                     <div class="box box6">
                         <span>2017-2018</span>
+                        <h4>Programmer Analyst</h4>
+                        <summary></summary>
                     </div>
                 </div>                
             </div>
+            <div class="btn">
+                <button><a href="./assets/CVErzhenaTsy.pdf" download>Download Resume</a></button>                
+            </div>
 
         </section>
-        <section class="wrapper skills-container">
+        <section id="skills" class="wrapper skills-container">
+            <div class="skill-text">
+                <h2>Skills &amp; Tools</h2>
+            </div>
+            <div class="skills-boxes">
+                <div class="skill-box">
+                    <i class="fab fa-html5"></i>
+                    <p>HTML</p>
+                </div>
+                <div class="skill-box">
+                    <i class="fab fa-css3-alt"></i>
+                    <p>CSS3</p>
+                </div>
+                <div class="skill-box">
+                    <i class="fab fa-sass"></i>
+                    <p>SASS</p>
+                </div>
+                <div class="skill-box">
+                    <i class="fab fa-js-square"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-box">
+                    <img src="./assets/jquery.png" alt="">
+                    <p>jQuery</p>
+                </div>  
+                <div class="skill-box">
+                    <i class="fab fa-react"></i>
+                    <p>React</p>
+                </div>
+                <div class="skill-box">
+                    <img src="./assets/api.png" alt="">
+                    <p>Rest API</p>
+                </div>
+                <div class="skill-box">
+                    <i class="fas fa-database"></i>
+                    <p>Firebase/mySQL</p>
+                </div>
+                <div class="skill-box">
+                    <i class="fab fa-github-square"></i>
+                    <p>GitHub</p>
+                </div>                
+                <div class="skill-box">
+                    <img src="./assets/monitor-tablet-and-smartohone1.png" alt="monitor-tablet-and-smartohone">
+                    <p>Responsive design</p>
+                </div>                
+                <div class="skill-box">
+                    <i class="fab fa-jira"></i>
+                    <p>JIRA</p>
+                </div>
+                <div class="skill-box">
+                    <img src="./assets/adobe-illustrator.png" alt="">
+                    <p>Adobe illustrator</p>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="wrapper projects-container">
+            <div class="project-title">
+                <h2>projects</h2>
+            </div>
+            <div class="project-boxes">
+                <div class="project-box">
+                    <h3>Goal Tracker App</h3>
+                    <summary>This goal tracker application allows users to create a goal with a set deadline and with options to edit and delete
+                    existed goal from the list of created goals.</summary>
+                    <ul>
+                        <li>HTML |</li>
+                        <li>CSS |</li>
+                        <li>SASS |</li>
+                        <li>JS |</li>
+                        <li>FIREBASE</li>
+                    </ul>
+                    <a href="https://github.com/ErkaTsy/erzhena-tsyrendashieva-project-five"  target=”_blank”>GitHub </a>
+                    <a href="https://erkatsy.github.io/erzhena-tsyrendashieva-project-five/"  target=”_blank”>View Live</a>
 
+                </div>
+                <div class="project-box">
+                    <div class="project-frame">
+                        <img src="./assets/project5.png" alt="Goal Tracker App">
+                    </div>                    
+                </div>
+                <div class="project-box">
+                    <img src="./assets/project3.png" alt="Math Genius Game App">
+                </div>
+                <div class="project-box">
+                    <h3>Math Genius Game</h3>
+                    <summary>Math Genius Game is a fun game that help kids learn multiplication. The app provides engaging practice and pushes kids to get better and quicker at multiplication. </summary>
+                    <ul>
+                        <li>HTML |</li>
+                        <li>CSS |</li>
+                        <li>SASS |</li>
+                        <li>JS</li>
+                    </ul>
+                    <a href="https://github.com/ErkaTsy/erzhena-tsyrendashieva-project-three"  target=”_blank”>GitHub </a>
+                    <a href="https://erkatsy.github.io/erzhena-tsyrendashieva-project-three/"  target=”_blank”>View Live</a>
+                </div>
+                <div class="project-box">
+                    <h3>Weather Application</h3>
+                    <summary>The weather application provides detailed information of local and worldwide forecasts. It shows current, hourly, and
+                    daily forecasts. Also, it displays a nice quote with advice for the day on a home screen. The app was successfully built
+                    with another web developer partner.</summary>
+                    <ul>                        
+                        <li>HTML |</li>
+                        <li>CSS |</li>
+                        <li>SASS |</li>
+                        <li>JS |</li>
+                        <li>jQuery |</li>
+                        <li>REST API</li>
+                    </ul>
+                    <a href="https://github.com/ingaLocmeleErzhenaTsyrendashieva/ingaLocmeleErzhenaTsyrendashievaProjectFour"  target=”_blank”>GitHub </a>
+                    <a href="https://ingalocmeleerzhenatsyrendashieva.github.io/ingaLocmeleErzhenaTsyrendashievaProjectFour/"  target=”_blank”>View Live</a>
+                </div>
+                <div class="project-box">
+                    <img src="./assets/project4.png" alt="Weather App">
+                </div>
+                <div class="project-box">
+                    <img src="./assets/project6.png" alt="College Navigator App">
+                </div>
+                <div class="project-box">
+                    <h3>College Navigator App</h3>
+                    <summary>The College Navigator helps new grads find intitutions in selected city. It provides information about schools which can be saved in favourite list. Also, user can add a new intitution that other grads also can find it. The app was 
+                        created with others three brilliant junor web developers.</summary>
+                    <ul>
+                        <li>HTML |</li>
+                        <li>CSS |</li>
+                        <li>SASS |</li>
+                        <li>JS |</li>
+                        <li>jQuery |</li>
+                        <li>REST API |</li>
+                        <li>FIREBASE</li>
+                    </ul>
+                    <a href="https://github.com/CollegeNavigator/project6CollegeNavigator"  target=”_blank”>GitHub </a>
+                    <a href="https://collegenavigator.github.io/project6CollegeNavigator/"  target=”_blank”>View Live</a>
+                </div>  
+            </div>
+            
 
         </section>
         <section id="contact-info" class="wrapper contact-container">
@@ -134,3 +277,4 @@
 
 </body>
 </html>
+

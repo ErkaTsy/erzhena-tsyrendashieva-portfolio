@@ -1440,4 +1440,14 @@ header nav input:checked ~ .hamburger:after {
   .toggle-menu {
     display: block;
   }
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: #F4F4F4;
+    width: 80%;
+    padding: 40px;
+    list-style-type: none;
+    -webkit-transform: translate(-120%, 0);
+            transform: translate(-120%, 0);
+  }
 }

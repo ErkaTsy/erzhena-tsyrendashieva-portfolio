@@ -14,11 +14,10 @@ header{
     .title-box{        
         width: 70%;
         height: 200px;
-        display: flex;
+        display: flex; 
         .title-section {
-            width: 550px;           
+            width: 550px;         
             display: flex;
-            justify-content: center;
             flex-direction: column;  
             margin: 0 auto;
             .title{
@@ -96,19 +95,11 @@ header{
     }
     .nav-menu{     
         position: relative;
-        width: 30%;
-        img{
-            display: inline-block;
-            margin: 5px;
-            border-radius: 50%;
-            width: 15%;
-            padding: 2px;
-        }
+        width: 30%;        
         h3{
             text-align: center;
             display: hidden;
             padding-left: 8px;
-            // color: #000000;
         }
         li{
             list-style: none;
@@ -262,4 +253,71 @@ header{
   100% {
     opacity: 0.5;
   }
+}
+
+
+// HAMBURGER MENU style
+.hamburger{
+    position: relative;
+    top: 0;
+    float: right;
+    margin: -200px 20px;
+    width: 30px;
+    height: 4px;
+    background-color: #e91e63;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 5;
+    transition: 0.4s;
+}
+.hamburger:before,
+.hamburger:after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    right: 0;
+    background: #e91e63;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+.hamburger:before{
+    top: -10px;
+    width: 30px;
+}
+.hamburger:after{
+    top: 10px;
+    width: 30px;
+}
+
+.toggle-menu{
+    position: absolute;
+    width: 60px;
+    right: 5px;
+    top: -215px;
+    height: 35px;
+    z-index: 3;
+    cursor: pointer;
+    opacity: 0;
+    background: black;
+}
+
+.hamburger,
+.toggle-menu
+{
+    display: none;
+}
+
+header nav input:checked ~ .hamburger{
+    background: transparent;
+}
+
+header nav input:checked ~ .hamburger:before{
+    top:0;
+    transform: rotate(-45deg);
+    width: 30px;
+}
+header nav input:checked ~ .hamburger:after{
+    top:0;
+    transform: rotate(45deg);
+    width: 30px;
 }

@@ -3,7 +3,6 @@
     flex-direction: row;
     height: auto;
     background: #1E1F26;
-    color: #ffffff;
     padding: 40px 0;
 }
 
@@ -32,8 +31,8 @@
         border: 4px solid #e91e63;
         background: #1E1F26;
         border-radius: 50px;
-        color: #ffffff;
         font-size: 12px;
+        color: #ffffff;
         letter-spacing: 1px;
         text-transform: uppercase;
         a{
@@ -73,7 +72,7 @@
     display: flex;
     flex-direction: column;
     background: #1E1F26;
-    // color: #fff; 
+    //  
 }
 .resume-box{
     width: 100%;
@@ -83,8 +82,10 @@
     flex-direction: column;
     align-items: center;  
     padding: 10px 20px; 
-    // border-top: 2px solid #000000;  
-    // border-bottom: 2px solid #000000;  
+    color: #000;
+    h2{
+        color: #000;       
+    }
 }
 
 .experience-box{
@@ -215,7 +216,6 @@
     flex-direction: column;
     color: #ffffff;
     h2{
-        margin: 0;
         padding: 20px 0;
         font-size:250px;
         letter-spacing: 4px;
@@ -329,9 +329,82 @@
 
 // CONTACT INFO styling
 .contact-container{
-    background: purple;
-    height: 400px;
+    background: #1E1F26;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    padding: 20px 0 50px 0;
+    span{
+        color:#e91e63;
+    }
 }
+
+.info-title{
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.contact-info-box{
+    display: flex;
+    flex-direction: row;
+}
+
+.info-box{
+    width: 40%;
+    padding: 0 20px;
+    p{
+        font-size: 20px;
+    }
+    ul li{
+        display: inline-block;
+    }
+}
+
+.email-box{
+    width: 60%;
+    padding: 0 20px;    
+    form{
+        // background: #2A2C47;
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;       
+        input{
+            width: 50%;
+            height: 30px;
+            border-radius: 30px;
+            border: none;
+            margin: 15px 0;
+            padding-left: 15px;
+            background: #2A2C47;
+            color: #ffffff;
+        }
+        textarea{
+            border-radius: 20px;
+            border: none;
+            margin: 15px 0;
+            padding: 15px;
+            background: #2A2C47;
+            color: #ffffff;
+            resize: none;
+        }
+        button{
+            width: 50%;
+            background: #2A2C47;
+            border-radius: 30px;
+            border: 4px solid #e91e63;
+            padding: 5px 0;
+            color: #ffffff;
+        }
+        button:hover,
+        button:focus{
+            border: 4px solid #3889B8;
+        }
+    }
+}
+
+
 
 
 
@@ -367,5 +440,27 @@
     font-size: 60px;
     color: #e91e63;
 }
+
+// CONTACT ICONS styling
+.fa-linkedin-in,
+.fa-github,
+.fa-paper-plane{
+    font-size: 30px;
+    color:#e91e63;
+    padding: 0 10px;
+}
+
+.fa-linkedin-in:hover,
+.fa-github:hover,
+.fa-paper-plane:hover,
+.fa-linkedin-in:focus,
+.fa-github:focus,
+.fa-paper-plane:focus{
+    color:#3889B8;
+}
+.fa-paper-plane{
+    font-size: 15px;
+}
+
 
 

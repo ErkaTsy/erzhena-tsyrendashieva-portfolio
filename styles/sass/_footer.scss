@@ -1,4 +1,20 @@
 footer{
-    background: hotpink;
-    height: 200px;
+    // background: hotpink;
+   
+}
+
+.footer-container{
+    background: #FBC91C;
+    // height: 100px;
+    text-align: center;
+    color: #000000;
+    p{
+        font-size: 20px;
+        margin: 0 ;
+        padding: 10px 0;
+        font-weight: 500;
+    }
+    span{
+        color: #e91e63;
+    }
 }

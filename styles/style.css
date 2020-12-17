@@ -239,6 +239,7 @@ html {
   font-family: 'Poppins', sans-serif;
   font-size: 62.5%;
   font-weight: 400;
+  color: #ffffff;
 }
 
 body {
@@ -275,6 +276,15 @@ a {
   line-height: 29px;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  color: #ffffff;
+  padding: 20px 0;
 }
 
 h1 {
@@ -377,7 +387,6 @@ header {
 }
 
 .header-container .title-box .title-section .title h1 {
-  color: #fff;
   -webkit-animation: mainFadeIn 2s forwards;
   animation: mainFadeIn 2s forwards;
   -webkit-animation-delay: 1.6s;
@@ -490,8 +499,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: white;
-  color: black;
+  background: #ffffff;
   border: none;
   border-radius: 50px;
   width: 350px;
@@ -508,24 +516,40 @@ header {
   background-color: white;
   right: -50px;
   width: 300px;
-  color: black;
+}
+
+.header-container .nav-menu div.button:hover h3,
+.header-container .nav-menu div.button:focus h3 {
+  color: #000000;
 }
 
 .header-container .nav-menu div.button.btn2:hover,
 .header-container .nav-menu div.button.btn2:focus {
   width: 300px;
+}
+
+.header-container .nav-menu div.button.btn2:hover h3,
+.header-container .nav-menu div.button.btn2:focus h3 {
   color: #e91e63;
 }
 
 .header-container .nav-menu div.button.btn3:hover,
 .header-container .nav-menu div.button.btn3:focus {
   width: 300px;
+}
+
+.header-container .nav-menu div.button.btn3:hover h3,
+.header-container .nav-menu div.button.btn3:focus h3 {
   color: #ffb510;
 }
 
 .header-container .nav-menu div.button.btn4:hover,
 .header-container .nav-menu div.button.btn4:focus {
   width: 300px;
+}
+
+.header-container .nav-menu div.button.btn4:hover h3,
+.header-container .nav-menu div.button.btn4:focus h3 {
   color: #3889B8;
 }
 
@@ -712,7 +736,6 @@ header {
           flex-direction: row;
   height: auto;
   background: #1E1F26;
-  color: #ffffff;
   padding: 40px 0;
 }
 
@@ -758,8 +781,8 @@ header {
   border: 4px solid #e91e63;
   background: #1E1F26;
   border-radius: 50px;
-  color: #ffffff;
   font-size: 12px;
+  color: #ffffff;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -824,6 +847,11 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 20px;
+  color: #000;
+}
+
+.resume-box h2 {
+  color: #000;
 }
 
 .experience-box {
@@ -1007,7 +1035,6 @@ header {
 }
 
 .projects-container h2 {
-  margin: 0;
   padding: 20px 0;
   font-size: 250px;
   letter-spacing: 4px;
@@ -1117,8 +1144,101 @@ header {
 }
 
 .contact-container {
-  background: purple;
-  height: 400px;
+  background: #1E1F26;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #ffffff;
+  padding: 20px 0 50px 0;
+}
+
+.contact-container span {
+  color: #e91e63;
+}
+
+.info-title {
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.contact-info-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.info-box {
+  width: 40%;
+  padding: 0 20px;
+}
+
+.info-box p {
+  font-size: 20px;
+}
+
+.info-box ul li {
+  display: inline-block;
+}
+
+.email-box {
+  width: 60%;
+  padding: 0 20px;
+}
+
+.email-box form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 16px;
+}
+
+.email-box form input {
+  width: 50%;
+  height: 30px;
+  border-radius: 30px;
+  border: none;
+  margin: 15px 0;
+  padding-left: 15px;
+  background: #2A2C47;
+  color: #ffffff;
+}
+
+.email-box form textarea {
+  border-radius: 20px;
+  border: none;
+  margin: 15px 0;
+  padding: 15px;
+  background: #2A2C47;
+  color: #ffffff;
+  resize: none;
+}
+
+.email-box form button {
+  width: 50%;
+  background: #2A2C47;
+  border-radius: 30px;
+  border: 4px solid #e91e63;
+  padding: 5px 0;
+  color: #ffffff;
+}
+
+.email-box form button:hover,
+.email-box form button:focus {
+  border: 4px solid #3889B8;
 }
 
 .fa-code,
@@ -1147,7 +1267,40 @@ header {
   color: #e91e63;
 }
 
-footer {
-  background: hotpink;
-  height: 200px;
+.fa-linkedin-in,
+.fa-github,
+.fa-paper-plane {
+  font-size: 30px;
+  color: #e91e63;
+  padding: 0 10px;
+}
+
+.fa-linkedin-in:hover,
+.fa-github:hover,
+.fa-paper-plane:hover,
+.fa-linkedin-in:focus,
+.fa-github:focus,
+.fa-paper-plane:focus {
+  color: #3889B8;
+}
+
+.fa-paper-plane {
+  font-size: 15px;
+}
+
+.footer-container {
+  background: #FBC91C;
+  text-align: center;
+  color: #000000;
+}
+
+.footer-container p {
+  font-size: 20px;
+  margin: 0;
+  padding: 10px 0;
+  font-weight: 500;
+}
+
+.footer-container span {
+  color: #e91e63;
 }

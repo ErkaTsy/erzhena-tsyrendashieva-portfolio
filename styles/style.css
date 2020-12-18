@@ -780,6 +780,17 @@ header {
   border: 4px solid #9B8E35;
 }
 
+.about-me a {
+  text-transform: lowercase;
+  color: #e91e63;
+}
+
+.about-me a:hover,
+.about-me a:focus {
+  text-transform: lowercase;
+  font-weight: bold;
+}
+
 .img-box {
   display: -webkit-box;
   display: -ms-flexbox;

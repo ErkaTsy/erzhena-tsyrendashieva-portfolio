@@ -310,14 +310,6 @@ p {
   font-size: 30px;
 }
 
-.colors {
-  background: #FBC91C;
-  color: #9B8E35;
-  color: #2A2C47;
-  background-color: #3889B8;
-  color: #1E1F26;
-}
-
 header {
   width: 100%;
   height: auto;
@@ -1929,6 +1921,9 @@ header {
   .projects-container .project-box:nth-child(6) img,
   .projects-container .project-box:nth-child(7) img {
     margin: -20px 15% 0 15%;
+  }
+  .email-box button {
+    font-size: 12px;
   }
   .footer-container p {
     font-size: 12px;

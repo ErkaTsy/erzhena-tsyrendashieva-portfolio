@@ -1,3 +1,4 @@
+// ABOUT CONTAINER STНДШТП
 .about-container{
     display: flex;
     flex-direction: row;
@@ -9,6 +10,7 @@
 .about-container>div{
     width: 50%;
 }
+
 .about-me{
     display: flex;
     flex-direction: column;
@@ -42,7 +44,6 @@
     }
 }
 
-
 .img-box{
     display: flex;
     justify-content: center;    
@@ -58,7 +59,6 @@
 .portfolio-img{
     width: 350px;
     height: 350px;
-    background-color: #9B8E35;
     border: 8px solid #9B8E35;;
     margin: -40px -20px 20px 20px;
     img{
@@ -66,14 +66,13 @@
         height: auto;
     }
 }
-
+// EXPERIENCE CONTAINER styling
 .experience-container{
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     background: #1E1F26;
-    //  
 }
 .resume-box{
     width: 100%;
@@ -84,19 +83,27 @@
     align-items: center;  
     padding: 10px 20px; 
     color: #000;
-    h2{
-        color: #000;       
-    }
+     h2{
+        padding: 0;
+        font-size:200px;
+        letter-spacing: 4px;
+        opacity: 0.2;
+    } 
 }
 
 .experience-box{
     width: 100%;
-    height: 800px;
+    height: 700px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 20px 0;  
-    color: #ffffff;    
+    color: #ffffff;  
+    margin-top: -100px;  
+    h2{
+        font-size: 35px ;
+        color: #000;       
+    }
     h4{
         padding: 15px 5px 0 0;
     }
@@ -106,7 +113,7 @@
     }
     .box{
         width: 70%;
-        height: 200px;
+        height: 170px;
     } 
     span{
        padding: 5px; 
@@ -137,11 +144,16 @@
     display: flex;
     flex-direction: column;
     padding-left: 40px;
+    h4,
+    summary{
+       margin-left: 4px;
+       letter-spacing: 1px;
+    }
     .box{
-        border-left: 1px dashed #e91e63;
+        border-left: 4px dotted #e91e63;
     } 
     span{
-       margin-left: -2px;
+       margin-left: -4px;
     }
 }
 
@@ -161,7 +173,7 @@
 }
 
 
-// SKILLS styling
+// SKILLS & TOOLS styling
 .skills-container{
     width: 100%;
     background: #2A2C47;
@@ -173,14 +185,6 @@
     }
 }
 
-.skills-container img:hover,
-.skills-container img:focus{
-    .skill-box p{
-        display: block;
-    }
-}
-
-
 .skill-text{
     text-align: center;    
 }
@@ -190,7 +194,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     background: rgba(30,31,38, 0.7);
-    // background: #1E1F26;
     padding: 40px 0;    
 }
 .skills-boxes > div{
@@ -221,16 +224,13 @@
         font-size:250px;
         letter-spacing: 4px;
         opacity: 0.2;
-        // color: #000000;
     }   
     h3{
          background: rgba(42,44,71, 0.9);
-        //  background: #2A2C47;
          padding: 15px 40px;
          border-radius: 15px;
          letter-spacing: 4px;
-         margin: 10px 0;
-         
+         margin: 10px 0;         
     }
     summary{
         font-size: 18px;
@@ -250,7 +250,6 @@
         padding-bottom: 5px;
     }
     a:hover{
-        // color:#FBC91C;
         border-bottom: 2px solid #e91e63;
         transition: border-bottom 0.4s, color 0.4s;
     }
@@ -267,25 +266,19 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
-
-.project-boxes > div{
-    width: 50%;
-    height: 400px;
-    position: relative;
-}
-
-.project-boxes{
-    img{
-        width: 80%;
+     img{
+        width: 90%;
         border-radius: 10px;  
         border: 5px solid #9B8E35;
         position: absolute;
     }
 }
-// .project-box{
-//  position: relative;
-// }
+
+.project-boxes > div{
+    width: 50%;
+    height: 360px;
+    position: relative;
+}
 
 .project-box:nth-child(1),
 .project-box:nth-child(5){
@@ -307,7 +300,7 @@
 .project-box:nth-child(3),
 .project-box:nth-child(7){    
     img{
-        margin: -100px 0 0 120px; 
+        margin: -100px 0 0 65px; 
     }
 }
 .project-box:nth-child(4),
@@ -325,8 +318,6 @@
 .project-box{
     padding: 20px;
 }
-
-
 
 // CONTACT INFO styling
 .contact-container{

@@ -16,7 +16,7 @@ header{
         height: 200px;
         display: flex; 
         .title-section {
-            width: 550px;         
+            width: 480px;         
             display: flex;
             flex-direction: column;  
             margin: 0 auto;
@@ -29,11 +29,12 @@ header{
             margin: 10px 0;
             .block{
                 width: 0%;
-                height: inherit;
+                height: 110px;
                 background: #ffb510;
                 animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
                 display: flex;
                 position: absolute;
+                margin: 0 20px;
             }
             h1{
                 -webkit-animation: mainFadeIn 2s forwards;
@@ -45,6 +46,7 @@ header{
                 align-items: baseline;
                 position: relative;  
                 letter-spacing: 2px;
+                margin: 0 20px;
                 span {
                     width:0px;
                     height: 0px;
@@ -70,6 +72,7 @@ header{
             display: flex;
             align-items: center;
             height: 30px;
+            margin: 30px 0;
             .block {
                 width: 0%;
                 height: 40px;
@@ -78,6 +81,7 @@ header{
                 animation: secBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
                 animation-delay: 2s;
                 display: flex;
+                margin: 40px 20px;
             }
             p {
                 animation: secFadeIn 2s forwards;
@@ -87,6 +91,7 @@ header{
                 text-transform: uppercase;
                 letter-spacing: 5px;
                 font-weight: bold;
+                margin: 20px;
             }
         }
 
@@ -234,15 +239,14 @@ header{
   80% {
     width: 10px;
     height: 10px;
-    bottom: 20px
+    bottom: 40px
 }
   100% {
     width: 7px;
     height: 7px;
     background: #e9d856;
     border: 0px solid #222;
-    bottom: 26px;
-
+    bottom: 30px;
   }
 }
 
@@ -255,69 +259,3 @@ header{
   }
 }
 
-
-// HAMBURGER MENU style
-.hamburger{
-    position: relative;
-    top: 0;
-    float: right;
-    margin: -200px 20px;
-    width: 30px;
-    height: 4px;
-    background-color: #e91e63;
-    border-radius: 10px;
-    cursor: pointer;
-    z-index: 5;
-    transition: 0.4s;
-}
-.hamburger:before,
-.hamburger:after{
-    content: "";
-    position: absolute;
-    height: 4px;
-    right: 0;
-    background: #e91e63;
-    border-radius: 10px;
-    transition: 0.4s;
-}
-.hamburger:before{
-    top: -10px;
-    width: 30px;
-}
-.hamburger:after{
-    top: 10px;
-    width: 30px;
-}
-
-.toggle-menu{
-    position: absolute;
-    width: 60px;
-    right: 5px;
-    top: -215px;
-    height: 35px;
-    z-index: 3;
-    cursor: pointer;
-    opacity: 0;
-    background: black;
-}
-
-.hamburger,
-.toggle-menu
-{
-    display: none;
-}
-
-header nav input:checked ~ .hamburger{
-    background: transparent;
-}
-
-header nav input:checked ~ .hamburger:before{
-    top:0;
-    transform: rotate(-45deg);
-    width: 30px;
-}
-header nav input:checked ~ .hamburger:after{
-    top:0;
-    transform: rotate(45deg);
-    width: 30px;
-}

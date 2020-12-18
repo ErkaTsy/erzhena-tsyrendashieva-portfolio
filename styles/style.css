@@ -1842,7 +1842,7 @@ header {
 
 @media only screen and (max-width: 450px) {
   .header-container .title-box .title-section .title h1 {
-    font-size: 30px;
+    font-size: 28px;
   }
   .frame {
     width: 300px;

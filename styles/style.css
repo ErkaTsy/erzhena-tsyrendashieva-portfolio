@@ -486,6 +486,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
   background: #ffffff;
   border: none;
   border-radius: 50px;
@@ -749,6 +750,16 @@ header {
   font-size: 20px;
 }
 
+.about-me a {
+  text-transform: lowercase;
+  color: #e91e63;
+}
+
+.about-me a:hover,
+.about-me a:focus {
+  font-weight: bold;
+}
+
 .about-me .btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -778,17 +789,6 @@ header {
 .about-me .btn a:hover,
 .about-me .btn a:focus {
   border: 4px solid #9B8E35;
-}
-
-.about-me a {
-  text-transform: lowercase;
-  color: #e91e63;
-}
-
-.about-me a:hover,
-.about-me a:focus {
-  text-transform: lowercase;
-  font-weight: bold;
 }
 
 .img-box {

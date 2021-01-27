@@ -21,6 +21,14 @@
     p{
         font-size: 20px;
     }
+    a{
+        text-transform: lowercase;
+        color:#e91e63;
+    }
+    a:hover,
+    a:focus{
+        font-weight: bold;        
+    }
     .btn{
         display: flex;
         flex-direction: row; 
@@ -41,17 +49,6 @@
     .btn a:hover,
     .btn a:focus{
         border: 4px solid #9B8E35;
-    }
-    a{
-        text-transform: lowercase;
-        color:#e91e63;
-
-    }
-    a:hover,
-    a:focus{
-        text-transform: lowercase;
-        font-weight: bold;
-        
     }
 }
 

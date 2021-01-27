@@ -313,7 +313,7 @@ p {
 header {
   width: 100%;
   height: auto;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .header-container {

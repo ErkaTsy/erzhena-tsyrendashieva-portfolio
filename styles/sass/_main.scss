@@ -14,12 +14,13 @@
 .about-me{
     display: flex;
     flex-direction: column;
-    padding: 10px 20px;
+    padding: 10px 20px 10px 60px;
     h2{
        text-align: center;
     }
     p{
         font-size: 20px;
+        line-height: 30px;
     }
     a{
         text-transform: lowercase;
@@ -60,7 +61,7 @@
 .frame{
     width: 350px;
     height: 350px;
-    margin: 60px 0 20px -40px;
+    margin: 60px 0 60px -40px;
     border: 8px solid #e91e63;
 }
 
@@ -82,6 +83,7 @@
     flex-direction: column;
     background: #1E1F26;
 }
+
 .resume-box{
     width: 100%;
     height: 280px;
@@ -354,9 +356,10 @@
 
 .info-box{
     width: 40%;
-    padding: 0 20px;
+    padding: 0 20px 0 60px;
     p{
         font-size: 20px;
+        line-height: 30px;
     }
     ul li{
         display: inline-block;

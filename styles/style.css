@@ -944,6 +944,7 @@ header {
 .experience-skill summary {
   margin-left: 4px;
   letter-spacing: 1px;
+  list-style: none;
 }
 
 .experience-skill .box {
@@ -1067,6 +1068,7 @@ header {
   font-size: 18px;
   padding: 0 20px 20px 20px;
   line-height: 22px;
+  list-style: none;
 }
 
 .projects-container ul {
